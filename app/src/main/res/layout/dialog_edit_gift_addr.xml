@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rl_red_packge"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:padding="15dp"
+                android:hint="收货人"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_round_white_card"
+                android:textColor="@color/txt_middle_grey"
+                android:textColorHint="@color/txt_light_grey"/>
+
+        <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:padding="15dp"
+                android:hint="收货电话"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_round_white_card"
+                android:textColor="@color/txt_middle_grey"
+                android:textColorHint="@color/txt_light_grey"/>
+
+        <EditText
+                android:id="@+id/et_addr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:padding="15dp"
+                android:hint="收货地址"
+                android:gravity="top"
+                android:minLines="4"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_round_white_card"
+                android:textColor="@color/txt_middle_grey"
+                android:textColorHint="@color/txt_light_grey"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13sp"
+            android:text="注:地址确认后不可修改"
+            android:textColor="@color/txt_red"/>
+
+
+    <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:background="@drawable/bg_round_button_white"
+            android:elevation="5dp"
+            android:src="@mipmap/icon_send"/>
+
+</LinearLayout>
+

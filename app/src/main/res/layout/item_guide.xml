@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/guide_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_guide_1" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_circle_theme"
+        android:text="Go ->"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:elevation="3dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/guide_v_1"
+            android:layout_width="25dp"
+            android:layout_height="5dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_round_light_grey" />
+
+        <View
+            android:id="@+id/guide_v_2"
+            android:layout_width="25dp"
+            android:layout_height="5dp"
+            android:background="@drawable/bg_round_light_grey" />
+
+        <View
+            android:id="@+id/guide_v_3"
+            android:layout_width="25dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_round_light_grey" />
+
+    </LinearLayout>
+
+</RelativeLayout>

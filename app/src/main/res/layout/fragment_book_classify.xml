@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scrollablelayout.ScrollableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slv_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.richard.novel.widget.ListHorizontalTitle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:list_title_name="新书"
+            app:list_title_desc="更多" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/clv_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            android:orientation="horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/bg_light_grey"/>
+    </LinearLayout>
+
+    <com.richard.novel.widget.ListHorizontalTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:list_title_name="热门"
+        app:list_title_desc="更多" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/clv_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager" />
+
+        <com.richard.novel.widget.EmptyView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            app:tips="没有内容" />
+
+    </FrameLayout>
+
+</com.scrollablelayout.ScrollableLayout>

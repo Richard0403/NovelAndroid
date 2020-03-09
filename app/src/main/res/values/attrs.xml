@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaitingDots">
+        <attr name="dotsColor" format="color" />
+        <attr name="period" format="integer" />
+        <attr name="jumpHeight" format="integer" />
+        <attr name="autoPlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ImgTxt">
+        <attr name="pic" format="reference" />
+        <attr name="txt" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ListTitle">
+        <attr name="list_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchWidget">
+        <attr name="hint_txt" format="string" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PersonItemList">
+        <attr name="title" format="string" />
+        <attr name="hide_type">
+            <enum name="invisible" value="0" />
+            <enum name="gone" value="1"/>
+        </attr>
+        <attr name="show_title" format="boolean" />
+
+        <attr name="pic1" format="reference" />
+        <attr name="pic2" format="reference" />
+        <attr name="pic3" format="reference" />
+        <attr name="pic4" format="reference" />
+
+        <attr name="name1" format="string" />
+        <attr name="name2" format="string" />
+        <attr name="name3" format="string" />
+        <attr name="name4" format="string" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ChallengeInfoCard">
+    </declare-styleable>
+
+    <declare-styleable name="ChallengeResult" >
+        <attr name="is_success" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PointTextView">
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PriceCardView">
+        <attr name="selected" format="boolean" />
+        <attr name="price" format="integer" />
+        <attr name="dayth" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DatingStatus">
+        <attr name="show_tips" format="boolean" />
+        <attr name="new_msg" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="tips" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="NewToolBar">
+        <attr name="new_tool_bar_title" format="string" />
+        <attr name="back_icon" format="reference" />
+        <attr name="right_view" format="enum" >
+            <enum name="image_view" value="1" />
+            <enum name="text_view" value="2" />
+        </attr>
+        <attr name="right_icon" format="reference" />
+        <attr name="title_color" format="reference" />
+        <attr name="right_text" format="string" />
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabHeader">
+        <attr name="txt_right" format="string" />
+        <attr name="txt_left" format="string" />
+        <attr name="select_tab" format="enum" >
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WidthTabLayout">
+        <attr name="tab_Mode" format="enum">
+            <enum name="mode_fixed" value="1"/>
+            <enum name="mode_scrollable" value="2"/>
+        </attr>
+        <attr name="tabIndicatorColor" format="color"/>
+        <attr name="tabSelectTextColor" format="color"/>
+        <attr name="tabTextColor" format="color"/>
+        <attr name="tabIndicatorHeight" format="dimension"/>
+        <attr name="tabIndicatorWidth" format="dimension"/>
+        <attr name="tabTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="NewListTitle">
+        <attr name="list_title_name" format="string" />
+        <attr name="list_title_desc" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomButtons">
+        <attr name="bb_left_text" format="string" />
+        <attr name="bb_center_text" format="string" />
+        <attr name="bb_right_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RightArrowBar">
+        <attr name="sub_title_size" format="dimension" />
+        <attr name="sub_title_text_color" format="reference" />
+        <attr name="right_arrow_title" format="string" />
+        <attr name="sub_title" format="string" />
+        <attr name="hide_top_line" format="boolean" />
+        <attr name="hide_bottom_line" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="unprogresColor" format="color"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="tickWidth" format="dimension"/>
+        <attr name="tickDensity" format="integer"/>
+        <attr name="bgShow" format="boolean"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="arcbgColor" format="color"/>
+        <attr name="degree" format="integer"/>
+        <attr name="arcCapRound" format="boolean"/>
+        <attr name="progressStyle" format="enum">
+            <enum name="tick" value="1"/>
+            <enum name="arc" value="0"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

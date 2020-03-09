@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.richard.novel.view.home.activity.ChangeCategoryActivity">
+
+    <com.richard.novel.widget.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:new_tool_bar_title="更改分类">
+    </com.richard.novel.widget.ToolBar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/clv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

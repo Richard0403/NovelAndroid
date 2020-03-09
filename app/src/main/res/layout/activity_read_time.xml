@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.richard.novel.view.user.activity.ReadTimeActivity">
+
+    <com.richard.novel.widget.ToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:new_tool_bar_title=""
+        app:background_color="@color/theme_color"
+        app:back_icon="@mipmap/ic_arrow_white_left"
+        app:title_color="@color/white">
+    </com.richard.novel.widget.ToolBar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="17dp"
+        android:background="@color/theme_color">
+        <TextView
+            android:id="@+id/tv_money_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日阅读"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/clv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+    <com.richard.novel.widget.EmptyView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:tips="快去读书吧~"
+        android:visibility="gone">
+    </com.richard.novel.widget.EmptyView>
+</LinearLayout>

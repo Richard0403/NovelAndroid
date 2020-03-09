@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@mipmap/bg_person_fragment">
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="10dp"
+            android:background="@drawable/bg_round_button_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_header">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="name"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_invite_code"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="邀"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round_button_theme2"
+                android:elevation="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:layout_below="@id/iv_header"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:background="@color/light_grey"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+    <com.richard.novel.widget.BallsCollisionView
+        android:id="@+id/btv_ball"
+        android:layout_below="@id/rl_header"
+        android:layout_above="@id/tv_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="right"
+        android:paddingLeft="17dp"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/txt_light_grey"
+        android:layout_alignParentBottom="true"
+        android:text="客服QQ群："/>
+<!--<com.richard.novel.widget.BallsCollisionView-->
+        <!--android:id="@+id/btv_ball"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_read_time"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="17dp"-->
+        <!--android:textSize="15sp"-->
+        <!--android:background="@drawable/bg_rectangle_stroke_light_grey"-->
+        <!--android:textColor="@color/txt_light_grey"-->
+        <!--android:text="今日阅读："/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_score"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="17dp"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/bg_rectangle_stroke_light_grey"-->
+        <!--android:textColor="@color/txt_light_grey"-->
+        <!--android:text="我的积分："/>-->
+
+
+</RelativeLayout>

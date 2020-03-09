@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.richard.novel.view.user.activity.GiftListActivity">
+
+
+    <com.richard.novel.widget.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:new_tool_bar_title="礼品兑换"
+        app:right_text="兑换记录"
+        app:right_view="text_view">
+    </com.richard.novel.widget.ToolBar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/clv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+    <com.richard.novel.widget.EmptyView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        app:tips="暂无礼物">
+    </com.richard.novel.widget.EmptyView>
+
+</LinearLayout>

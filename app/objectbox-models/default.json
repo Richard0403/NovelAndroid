@@ -1,0 +1,307 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7566551668215245491",
+      "lastPropertyId": "10:1044156995109820112",
+      "name": "BookCategory",
+      "properties": [
+        {
+          "id": "1:3308944250541183922",
+          "name": "boxId"
+        },
+        {
+          "id": "2:8936628284408362964",
+          "name": "updateTime"
+        },
+        {
+          "id": "3:3209563892001473171",
+          "name": "createTime"
+        },
+        {
+          "id": "4:5970306853841934655",
+          "name": "codeX"
+        },
+        {
+          "id": "5:4307190454322433988",
+          "name": "parent_code"
+        },
+        {
+          "id": "6:1037712345746788319",
+          "name": "name"
+        },
+        {
+          "id": "7:2414870814962013701",
+          "name": "status"
+        },
+        {
+          "id": "8:1628720443105228742",
+          "name": "comment"
+        },
+        {
+          "id": "9:7034023594096339210",
+          "name": "icon"
+        },
+        {
+          "id": "10:1044156995109820112",
+          "name": "media_type"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5219594280142315432",
+      "lastPropertyId": "8:3707815692224233308",
+      "name": "BookChapterContent",
+      "properties": [
+        {
+          "id": "1:763228933350746782",
+          "name": "boxId"
+        },
+        {
+          "id": "2:1759948217899940493",
+          "name": "id"
+        },
+        {
+          "id": "3:6931349943535952457",
+          "name": "bookInfo"
+        },
+        {
+          "id": "4:8907849314789149454",
+          "name": "chapterNo"
+        },
+        {
+          "id": "5:4515544064397930846",
+          "name": "title"
+        },
+        {
+          "id": "6:8303574240113115194",
+          "name": "wordNum"
+        },
+        {
+          "id": "7:7355415264849789318",
+          "name": "content"
+        },
+        {
+          "id": "8:3707815692224233308",
+          "name": "status"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:9000294307842605883",
+      "lastPropertyId": "10:3023742983958275204",
+      "name": "BookChapterInfo",
+      "properties": [
+        {
+          "id": "1:2532676675254412850",
+          "name": "boxId"
+        },
+        {
+          "id": "2:2954926307170015338",
+          "name": "id"
+        },
+        {
+          "id": "3:5806590987902881178",
+          "name": "bookInfo"
+        },
+        {
+          "id": "4:5235441613942039965",
+          "name": "chapterNo"
+        },
+        {
+          "id": "5:7547087295325970279",
+          "name": "title"
+        },
+        {
+          "id": "6:5830854275721083272",
+          "name": "wordNum"
+        },
+        {
+          "id": "7:4708995243156609076",
+          "name": "content"
+        },
+        {
+          "id": "8:8631476646156018649",
+          "name": "status"
+        },
+        {
+          "id": "9:2708715548587266506",
+          "name": "start"
+        },
+        {
+          "id": "10:3023742983958275204",
+          "name": "end"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:6804652575000791758",
+      "lastPropertyId": "19:8830772954294771609",
+      "name": "BookInfo",
+      "properties": [
+        {
+          "id": "1:4139895307421985934",
+          "name": "boxId"
+        },
+        {
+          "id": "2:9129651220697068948",
+          "name": "id"
+        },
+        {
+          "id": "3:3120041404822334262",
+          "name": "bookCategory"
+        },
+        {
+          "id": "4:6667274566806640670",
+          "name": "name"
+        },
+        {
+          "id": "5:511518148741117964",
+          "name": "author"
+        },
+        {
+          "id": "6:4538511854392492474",
+          "name": "summary"
+        },
+        {
+          "id": "7:6572073269321675577",
+          "name": "cover"
+        },
+        {
+          "id": "8:2843371928580545218",
+          "name": "chapter_num"
+        },
+        {
+          "id": "9:4616602103763008084",
+          "name": "word_num"
+        },
+        {
+          "id": "10:5416757472262670135",
+          "name": "status"
+        },
+        {
+          "id": "11:8052276347822735499",
+          "name": "url"
+        },
+        {
+          "id": "12:7051610584964003348",
+          "name": "media_type"
+        },
+        {
+          "id": "13:283461459550196295",
+          "name": "author_introduction"
+        },
+        {
+          "id": "14:941136807278349702",
+          "name": "poster"
+        },
+        {
+          "id": "15:4450286499099301364",
+          "name": "readTimes"
+        },
+        {
+          "id": "16:1956189502539894165",
+          "name": "chapterPos"
+        },
+        {
+          "id": "17:6130240897390878810",
+          "name": "pagePos"
+        },
+        {
+          "id": "18:9190962900184316396",
+          "name": "isLocal"
+        },
+        {
+          "id": "19:8830772954294771609",
+          "name": "lastReadTime"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:4809070692458623527",
+      "lastPropertyId": "6:233496751029465933",
+      "name": "BookShelf",
+      "properties": [
+        {
+          "id": "1:5284923274180206564",
+          "name": "boxId"
+        },
+        {
+          "id": "2:4678300383039510099",
+          "name": "id"
+        },
+        {
+          "id": "3:2326442324391209439",
+          "name": "bookInfo"
+        },
+        {
+          "id": "4:5962406618758532086",
+          "name": "chapterPos"
+        },
+        {
+          "id": "5:166656437585008485",
+          "name": "pagePos"
+        },
+        {
+          "id": "6:233496751029465933",
+          "name": "lastReadTime"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:5152718233746806691",
+      "lastPropertyId": "6:9152031209336322904",
+      "name": "TimeRecord",
+      "properties": [
+        {
+          "id": "1:2177014130950979008",
+          "name": "boxId"
+        },
+        {
+          "id": "2:1112371647752994991",
+          "name": "bookId"
+        },
+        {
+          "id": "3:4592818905636533861",
+          "name": "readTime"
+        },
+        {
+          "id": "5:5359759790806980728",
+          "name": "isUploaded"
+        },
+        {
+          "id": "6:9152031209336322904",
+          "name": "saveTime"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "7:5152718233746806691",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [
+    8356728984730709622
+  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    636345922143954920,
+    694594936553893336,
+    8580414199157006699,
+    3318050960516646449,
+    1896555102585121938,
+    7911125648323477773
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

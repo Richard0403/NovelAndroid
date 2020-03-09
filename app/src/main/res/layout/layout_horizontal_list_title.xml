@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="4dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_theme" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/v_line"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/txt_middle_grey"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/new_list_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/new_title_right_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:text="更多"
+            android:textColor="@color/txt_light_grey"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_right_arrow" />
+
+    </LinearLayout>
+
+</FrameLayout>

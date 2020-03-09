@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_grey"
+    tools:context="com.richard.novel.view.home.activity.BookDetailActivity">
+    <com.richard.novel.widget.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:new_tool_bar_title ="图书详情">
+    </com.richard.novel.widget.ToolBar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bg_round_stroke_theme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+            <ImageView
+                android:id="@+id/iv_book_pic"
+                android:layout_width="90dp"
+                android:layout_height="125dp"
+                android:background="@drawable/bg_round_white"
+                android:elevation="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_book_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_book_pic"
+                android:layout_alignTop="@id/iv_book_pic"
+                android:layout_toRightOf="@id/iv_book_pic"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/tv_book_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Name"
+                    android:textColor="@color/txt_deep"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="author"
+                    android:textColor="@color/txt_deep"
+                    android:textSize="11sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="summary"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/txt_middle_grey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.richard.novel.widget.RotateTextView
+            android:id="@+id/tv_type"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_type_tip"
+            android:text="type"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_add_shelf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="加入书架"
+            android:textColor="@color/theme_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_free_try"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:text="免费试读"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_light_grey" />
+
+        <TextView
+            android:id="@+id/tv_read_book"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="阅读"
+            android:textColor="@color/theme_color"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>

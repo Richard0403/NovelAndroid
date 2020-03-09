@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scrollablelayout.ScrollableLayout
+        android:id="@+id/slv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+                <com.richard.novel.widget.arcProgress.ArcProgress
+                    android:id="@+id/arc_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:radius="90dp"
+                    app:arcCapRound="true"
+                    android:progress="0"
+                    app:degree="90"
+                    app:progressStyle="tick"
+                    app:progressColor="@color/color_theme"
+                    app:tickDensity="3" />
+                <ImageView
+                    android:id="@+id/iv_book_pic"
+                    android:layout_width="71dp"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="去阅读"
+                    android:src="@mipmap/bg_add_cover"
+                    android:scaleType="fitXY"
+                    android:elevation="5dp"
+                    android:background="@color/white"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_light_grey"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/iv_book_pic"
+                    android:layout_marginTop="10dp"
+                    android:text="添加"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/clv_shelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="400dp"/>
+            <com.richard.novel.widget.EmptyView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                app:tips="快去找书吧">
+            </com.richard.novel.widget.EmptyView>
+        </RelativeLayout>
+    </com.scrollablelayout.ScrollableLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:elevation="3dp"
+        android:background="@drawable/bg_round_theme"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_remove_shelf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="批量移出书架"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

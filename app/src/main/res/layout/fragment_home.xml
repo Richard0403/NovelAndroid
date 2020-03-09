@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/theme_color_light">
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_round_button_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ic_reader_search" />
+
+                <TextView
+                    android:id="@+id/search_widget_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="10dp"
+                    android:hint="搜索书名或作者"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textColor="@color/txt_middle_grey"
+                    android:textColorHint="@color/txt_light_grey"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <com.richard.novel.widget.WidthTabLayout
+            android:id="@+id/tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:tabIndicatorColor="@color/theme_color"
+            app:tabSelectTextColor="@color/theme_color"
+            app:tabMode="scrollable"
+            app:tabTextSize="16sp"
+            app:tabIndicatorWidth="10dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/theme_color"
+            app:tabTextColor="@color/txt_middle_grey"/>
+
+        <com.richard.novel.widget.NoManyScrollViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
